@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Online Guitar Shop
+
+This is a 3-page guitar shop application built with **Next.js** and **Apollo Client** that fetches data from a GraphQL API. It displays guitar brands, models, and detailed specs with musicians.
+
+## Features
+
+- **Page 1 – Guitar Brands**  
+  Displays all guitar brands fetched from the API.  
+  Clicking a brand navigates to the models page for that brand.
+
+- **Page 2 – Guitar Models**  
+  Displays models for the selected brand.  
+  Includes a search bar to filter models by name and a filter to narrow by guitar type.  
+  Clicking a model navigates to the guitar details page.
+
+- **Page 3 – Guitar Details**  
+  Displays detailed information about a selected guitar in two tabs:  
+  - Specs (body wood, bridge, pickups)  
+  - Musicians (shows 2 musicians at a time with pagination dots)
+
+- Loading and error handling are implemented on all pages.
+
+## Technologies Used
+
+- Next.js (React framework)  
+- Apollo Client for GraphQL data fetching  
+- CSS Modules for styling  
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js (v16 or later recommended)  
+- npm or yarn  
+
+### Installation
 
 ```bash
+git clone https://github.com/enkelberisha/guitar-shop-task.git
+cd guitar-shop-task
+
+npm install
+# or
+yarn install
+
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 to view the app in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Folder Structure
+/app — Contains Next.js page components
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+/components — Reusable React components
 
-## Learn More
+/styles — CSS Modules for styling
 
-To learn more about Next.js, take a look at the following resources:
+/graphql — GraphQL queries
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Notes
+The GraphQL API used: https://graphql-api-brown.vercel.app/api/graphql
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+You can navigate through brands, filter and search models, and view guitar details with specs and musicians.
