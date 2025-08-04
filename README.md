@@ -46,19 +46,22 @@ yarn install
 npm run dev
 # or
 yarn dev
+```
 
 Open http://localhost:3000 to view the app in your browser.
 
-Folder Structure
-/app — Contains Next.js page components
+## Folder Structure
 
-/components — Reusable React components
+- `/app` — Contains Next.js page components  
+- `/components` — Reusable React components  
+- `/styles` — CSS Modules for styling  
+- `/graphql` — GraphQL queries  
 
-/styles — CSS Modules for styling
+## Notes
 
-/graphql — GraphQL queries
+- The GraphQL API used: https://graphql-api-brown.vercel.app/api/graphql  
+- You can navigate through brands, filter and search models, and view guitar details with specs and musicians.
 
-Notes
-The GraphQL API used: https://graphql-api-brown.vercel.app/api/graphql
+## License
 
-You can navigate through brands, filter and search models, and view guitar details with specs and musicians.
+This project is for educational purposes only.
